@@ -1,0 +1,676 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ieee1872-owl/cora-fullaxiom#"
+     xml:base="http://purl.org/ieee1872-owl/cora-fullaxiom"
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/cora-fullaxiom">
+        <owl:imports rdf:resource="http://purl.org/ieee1872-owl/cora"/>
+        <owl:imports rdf:resource="http://purl.org/ieee1872-owl/pos"/>
+        <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
+        <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
+        <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.
+
+The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)</dc:rights>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cora-bare#CollectiveRoboticSystem -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/cora-bare#CollectiveRoboticSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#part"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/cora-bare#Robot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/cora-bare#CollectiveRoboticSystem"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#part"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/cora-bare#Robot"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>7.8.5</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cora-bare#Robot -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/cora-bare#Robot">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/cora-bare#robotPart"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/cora-bare#RobotInterface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/cora-bare#Robot"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/cora-bare#robotPart"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/cora-bare#RobotInterface"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>7.3.2</annotation:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.3.7</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cora-bare#RobotGroup -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/cora-bare#RobotGroup">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#member"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ieee1872-owl/cora-bare#Robot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/cora-bare#RobotGroup"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#member"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ieee1872-owl/cora-bare#Robot"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>7.5.2</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cora-bare#RoboticEnvironment -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/cora-bare#RoboticEnvironment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/cora-bare#equippedWith"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/cora-bare#RoboticSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/cora-bare#RoboticEnvironment"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/cora-bare#equippedWith"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/cora-bare#RoboticSystem"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>7.7.6</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cora-bare#RoboticSystem -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/cora-bare#RoboticSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#part"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/cora-bare#Robot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/cora-bare#RoboticSystem"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#part"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/cora-bare#Robot"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>7.6.5</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cora-bare#SingleRoboticSystem -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/cora-bare#SingleRoboticSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#part"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/cora-bare#Robot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/cora-bare#SingleRoboticSystem"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#part"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/cora-bare#Robot"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>7.8.4</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/corax#Design -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/corax#Design">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/corax#about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/corax#DesignObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/corax#Design"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/corax#about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/corax#DesignObject"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>6.1.12</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/corax#DesignObject -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/corax#DesignObject">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/corax#about"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/corax#Design"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/corax#DesignObject"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/corax#about"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/corax#Design"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>6.1.11</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/pos#OrientationCoordinateSystem -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/pos#OrientationCoordinateSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#refOCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationCoordinateSystem"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#refOCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.6.6</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/pos#OrientationValue -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/pos#OrientationValue">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#inOCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationCoordinateSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationValue"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#inOCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationCoordinateSystem"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.7.10</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/pos#PositionCoordinateSystem -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/pos#PositionCoordinateSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#refPCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#PositionCoordinateSystem"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#refPCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.1.6</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/pos#PositionMeasure -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/pos#PositionMeasure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#inPCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#PositionCoordinateSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#PositionMeasure"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#inPCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#PositionCoordinateSystem"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.2.10</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/pos#PositionPoint -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/pos#PositionPoint">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#refPCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#PositionPoint"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#refPCS"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.1.6</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/pos#_OrientationTransformationFunction -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/pos#_OrientationTransformationFunction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain1"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_range"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#_OrientationTransformationFunction"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain1"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationValue"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.9.2</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#_OrientationTransformationFunction"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_range"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationValue"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.9.2</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/pos#_PositionTransformationFunction -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/pos#_PositionTransformationFunction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain1"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/pos#PositionPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_range"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/pos#PositionPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#_PositionTransformationFunction"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain1"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/pos#PositionPoint"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.4.2</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#_PositionTransformationFunction"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_range"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/pos#PositionPoint"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.4.2</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/pos#_QuantPoseTransformationFunction -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/pos#_QuantPoseTransformationFunction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain1"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#QuantitativePose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_range"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#QuantitativePose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#_QuantPoseTransformationFunction"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain1"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#QuantitativePose"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.12.2</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#_QuantPoseTransformationFunction"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_range"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/pos#QuantitativePose"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <annotation:ieee18722015AxiomNumber>9.12.2</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Abstract -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Abstract">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#located"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#time"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Agent -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Agent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#agent"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Artifact -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Artifact">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#result"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Making"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Collection -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Collection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#member"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Creation -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Creation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#result"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#IntentionalProcess -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#IntentionalProcess">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#CognitiveAgent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Physical -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Physical">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#located"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#time"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Process -->
+
+    <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Process">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#agent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#causes"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
