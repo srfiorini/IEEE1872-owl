@@ -10,7 +10,7 @@ We modularized the ontologies in different levels of axiomatization. The ontolog
 * sumo-cora.owl: The taxonomy of concepts of SUMO used in the remaining ontologies.
 * cora.owl: It is cora-base linked to sumo-cora, rparts and corax. This is the recommended implementation in this library.
 * cora-fullaxiom.owl: A version of cora.owl + pos.owl with the result of our best effort to translate SUO-KIF axioms in SUMO and IEEE 1872-2015 to OWL. Use this implementation with care. 
-* corax.owl: The OWL implrmentation of CORAX.
+* corax.owl: The OWL implementation of CORAX.
 * rparts.owl: The OWL implementation of RPARTS.
 * pos.owl: The OWL implementation of POS.
 * annotation.owl: Some annotation properties for the ontologies in this project.
@@ -30,12 +30,12 @@ All ontologies can be accessed through the "http://purl.org/ieee1872-owl" prefix
 
 # Method for cora.owl
 
-The translation from the specification in IEEE 1872 to IEEE1872-owl was made manually. We did not use any automatic translation tools. We tried to keep as maximum as possible the original ontological commitements of IEEE 1872. It is under-specified in relation to th SUO-KIF implementation. As a consequence, IEEE1872-owl allows models that are not consistent with IEEE 1872.
+The translation from the specification in IEEE 1872 to IEEE1872-owl was made manually. We did not use any automatic translation tools. We tried to keep as maximum as possible the original ontological commitments of IEEE 1872. It is under-specified in relation to the SUO-KIF implementation. Consequently, IEEE1872-owl allows models that are not consistent with IEEE 1872.
 
 In general, we used the following rules:
 
 * SUO-KIF concepts were translated to OWL classes.
-* SUO-KIF binary relations were translated to OWL properties, taking into account their meta-properties (asymetric, reflexive, etc.) and their domain and ranges where possible.
+* SUO-KIF binary relations were translated to OWL properties, taking into account their meta-properties (asymmetric, reflexive, etc.) and their domain and ranges where possible.
 * SUO-KIF class and relation taxonomies have been translated to the equivalent in OWL.
 * SUO-KIF partitions have been translated to class disjointness axioms and unions over OWL classes.
 
@@ -47,11 +47,11 @@ The POS ontology include many ternary and one quaternary relation, as well as fu
 
 Similar to cora.owl, adding:
 
-* SUO-KIF axioms in SUMO having  the form "Concept(x) -> formula" were translated as subclass restrictions. Some have been ignored for being too specific  (such as the restriction that Objects must be mono or polychromatic) or cannot be represented in OWL. 
+* SUO-KIF axioms in SUMO having the form "Concept(x) -> formula" were translated as subclass restrictions. Some have been ignored for being too specific (such as the restriction that Objects must be mono or polychromatic) or cannot be represented in OWL. 
 
-* SUO-KIF axioms in SUMO NOT having the form "Concept(x) -> formula" were avoided. We might have translate some of them if they: (a) are not too specific; or (b) do not force the inclusion of too many entities in the OWL ontology.
+* SUO-KIF axioms in SUMO NOT having the form "Concept(x) -> formula" were avoided. We translated some of them if they: (a) are not too specific; or (b) do not force the inclusion of too many entities in the OWL ontology.
 
-* SUO-KIF axioms in IEEE 1872-2015 were translated as subclass restrictions. It was not possible to translate some of them. All axioms have been anotated with cross-references to axioms in IEEE 1872-2015. See annotation property "IEEE 1872-2015 axiom code" for more info.
+* SUO-KIF axioms in IEEE 1872-2015 were translated as subclass restrictions. It was not possible to translate some of them. All axioms have been annotated with cross-references to axioms in IEEE 1872-2015. See annotation property "IEEE 1872-2015 axiom code" for more info.
 
 # Copyright
 
