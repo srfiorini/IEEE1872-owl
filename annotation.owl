@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/ieee1872-owl/annotation#"
      xml:base="http://purl.org/ieee1872-owl/annotation"
-     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -11,6 +10,7 @@
      xmlns:annotation1="http://purl.org/ieee1872-owl/annotation#">
     <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/annotation">
         <rdfs:comment>Ontology for  annotation properties used in IEEE1872-owl.</rdfs:comment>
+        <rdfs:seeAlso>https://github.com/srfiorini/IEEE1872-owl</rdfs:seeAlso>
         <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
         <dc:creator>Sandro Rama Fiorini</dc:creator>
     </owl:Ontology>

@@ -10,7 +10,13 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/cora-bare">
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/annotation"/>
+        <rdfs:seeAlso>https://github.com/srfiorini/IEEE1872-owl</rdfs:seeAlso>
         <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
+        <rdfs:comment xml:lang="en">This is the base OWL implementation of CORA in IEEE 1872-2015. It is a bare implementation of CORA only. It only includes  the taxonomy of concepts and relations defined in CORA, isolated from other ontologies. It includes some few axioms reggarding disjointness, property characteristics and property ranges/domains. 
+
+The OWL implementation is an underspecified version of the SUO-KIF implementation in IEEE 1872-2015. That is, the set of allowed models of the SUO-KIF implementation is a proper subset of the allowed models by the OWL implementation.
+
+Concept definitions in natural language and othe clarifications can be found in the  IEEE 1872-2015 standard.</rdfs:comment>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
         <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.
 

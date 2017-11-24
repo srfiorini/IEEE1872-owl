@@ -10,16 +10,19 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/sumo-cora">
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/annotation"/>
+        <rdfs:comment xml:lang="en">This is the OWL implementation of SUMO as used by IEEE 1872-2015. It only includes  a taxonomy of concepts and relations, with some few axioms reggarding disjointness, property characteristics and property ranges/domains. 
+
+We only added propeties and axioms that were needed for IEEE 1872-2015, as well as related concepts/relations when needed. We also added a solution for reifying functions, as well as ternary and quaternary relations. 
+
+The OWL implementation is an underspecified version of the SUO-KIF implementation in IEEE 1872-2015. That is, the set of allowed models of the SUO-KIF implementation is a proper subset of the allowed models by the OWL implementation.
+
+Concept definitions in natural language and othe clarifications can be found in the  IEEE 1872-2015 standard.</rdfs:comment>
+        <rdfs:seeAlso>https://github.com/srfiorini/IEEE1872-owl</rdfs:seeAlso>
         <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
         <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.
 
 The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)</dc:rights>
-        <rdfs:comment>This is an OWL implementation of IEEE 1872-2015. It includes only the taxonomy of concepts and relations, with some few axioms reggarding disjointness, property characteristics and property ranges/domains. 
-
-The OWL implementation is an underspecified version of the SUO-KIF implementation in IEEE 1872-2015. That is, the set of allowed models of the SUO-KIF implementation is a proper subset of the allowed models by the OWL implementation.
-
-Concept definitions in natural language and othe clarifications can be found in the  IEEE 1872-2015 standard.</rdfs:comment>
     </owl:Ontology>
     
 

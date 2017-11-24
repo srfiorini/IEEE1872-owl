@@ -10,6 +10,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/pos">
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/sumo-cora"/>
+        <rdfs:seeAlso>https://github.com/srfiorini/IEEE1872-owl</rdfs:seeAlso>
         <rdfs:comment xml:lang="en">This is the OWL version of the POS ontology in IEEE 1872-2015. It includes only axioms defining taxonomy of classes and relations, as well as axioms defining partitions and relation domains. 
 
 If the full axiomation is important to you, check the fully axiomatized verion of IEEE 1872-2015.</rdfs:comment>

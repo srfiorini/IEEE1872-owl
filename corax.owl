@@ -11,6 +11,12 @@
     <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/corax">
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/sumo-cora"/>
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/annotation"/>
+        <rdfs:comment xml:lang="en">This is the OWL implementation of CORAX in IEEE 1872-2015. It only includes  the taxonomy of concepts and relations, with some few axioms reggarding disjointness, property characteristics and property ranges/domains. 
+
+The OWL implementation is an underspecified version of the SUO-KIF implementation in IEEE 1872-2015. That is, the set of allowed models of the SUO-KIF implementation is a proper subset of the allowed models by the OWL implementation.
+
+Concept definitions in natural language and othe clarifications can be found in the  IEEE 1872-2015 standard.</rdfs:comment>
+        <rdfs:seeAlso>https://github.com/srfiorini/IEEE1872-owl</rdfs:seeAlso>
         <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
         <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.
