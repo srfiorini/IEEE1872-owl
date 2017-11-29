@@ -37,17 +37,17 @@ In general, we used the following rules:
 * SUO-KIF concepts were translated to OWL classes.
 * SUO-KIF binary relations were translated to OWL properties, taking into account their meta-properties (asymmetric, reflexive, etc.) and their domain and ranges where possible.
 * SUO-KIF class and relation taxonomies have been translated to the equivalent in OWL.
-* SUO-KIF partitions have been translated to class disjointness axioms and unions over OWL classes.
+* SUO-KIF partitions have been translated to class disjointness unions over OWL classes.
 
 # Method for pos.owl
 
-The POS ontology include many ternary and one quaternary relation, as well as functions. Since these cannot be represented natively in OWL, we devised a reification method to represent them. More info can be found in the documentation of the classes _Relation and _Function in POS.
+The POS ontology include many ternary and one quaternary relation, as well as functions. Since these cannot be represented natively in OWL, we devised a reification method to represent them. More info can be found in the documentation of the classes \_Relation and \_Function in POS.
 
 # Method for cora-fullaxiom.owl
 
-Similar to cora.owl, adding:
+Similar to cora.owl and pos.owl, adding:
 
-* SUO-KIF axioms in SUMO having the form "Concept(x) -> formula" were translated as subclass restrictions. Some have been ignored for being too specific (such as the restriction that Objects must be mono or polychromatic) or cannot be represented in OWL. 
+* SUO-KIF axioms in SUMO having the form "Concept(x) -> formula" were translated as subclass restrictions. Some have been ignored for being too specific (such as the restriction that Objects must be mono or polychromatic) or being impractical\\impossible to represented in OWL. 
 
 * SUO-KIF axioms in SUMO NOT having the form "Concept(x) -> formula" were avoided. We translated some of them if they: (a) are not too specific; or (b) do not force the inclusion of too many entities in the OWL ontology.
 
@@ -55,13 +55,13 @@ Similar to cora.owl, adding:
 
 # Copyright
 
-IEEE 1872 copyright is property of IEEE Standards Association. 
+The IEEE 1872-2015 copyright is property of IEEE Standards Association. 
 
-The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
+The OWL implementation of the ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 # Collaborators
 
-* Sandro Rama Fiorini (Lissi-UPEC, France)
+* Sandro Rama Fiorini (Lissi, UPEC, France)
 * Vitor Fortes Rey (DFKI, TU-Kaiserslautern, Germany)
 
 The first version was developed at Φ-Robotics Research Group (http://www.inf.ufrgs.br/phi-group/) at UFRGS, Brazil.
