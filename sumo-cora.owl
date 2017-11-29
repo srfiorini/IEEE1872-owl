@@ -38,9 +38,9 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     
 
 
-    <!-- http://purl.org/ieee1872-owl/pos#_classifiedBy -->
+    <!-- http://purl.org/ieee1872-owl/pos#_instance -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/pos#_classifiedBy">
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/pos#_instance">
         <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Relation"/>
         <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
     </owl:ObjectProperty>
@@ -53,7 +53,6 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
         <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
-        <rdfs:comment></rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -62,7 +61,6 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
 
     <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_domain1">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain"/>
-        <rdfs:comment>Equivalent to (domain ?RELATION 1 ?RANGE)</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -71,7 +69,6 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
 
     <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_domain2">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain"/>
-        <rdfs:comment>Equivalent to (domain ?RELATION 2 ?RANGE)</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -80,7 +77,6 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
 
     <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_domain3">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain"/>
-        <rdfs:comment>Equivalent to (domain ?RELATION 3 ?RANGE)</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -307,7 +303,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     <!-- http://purl.org/ieee1872-owl/sumo-cora#Function -->
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Function">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
     </owl:Class>
     
 
@@ -435,6 +431,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#QuaternaryRelation">
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
+        <owl:disjointWith rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TernaryRelation"/>
     </owl:Class>
     
 
@@ -443,6 +440,11 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Relation">
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Function"/>
+            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#List"/>
+            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Predicate"/>
+        </owl:disjointUnionOf>
     </owl:Class>
     
 
@@ -467,6 +469,14 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#SetOrClass">
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
     </owl:Class>
     
 

@@ -629,7 +629,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Function"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationSpatialOperator"/>
             </owl:Restriction>
@@ -650,7 +650,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_UnaryFunction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/pos#OrientationTransformationFunction"/>
             </owl:Restriction>
@@ -671,7 +671,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Function"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/pos#PositionSpatialOperator"/>
             </owl:Restriction>
@@ -692,7 +692,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_UnaryFunction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/pos#PositionTransformationFunction"/>
             </owl:Restriction>
@@ -713,7 +713,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_UnaryFunction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.org/ieee1872-owl/pos#QuantPoseTransformationFunction"/>
             </owl:Restriction>
@@ -734,7 +734,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:hasValue rdf:resource="http://purl.org/ieee1872-owl/pos#extensionPos"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -811,7 +811,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:hasValue rdf:resource="http://purl.org/ieee1872-owl/pos#mapsOCS"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -888,7 +888,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:hasValue rdf:resource="http://purl.org/ieee1872-owl/pos#mapsPCS"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -965,7 +965,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:hasValue rdf:resource="http://purl.org/ieee1872-owl/pos#oCompose"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1042,7 +1042,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:hasValue rdf:resource="http://purl.org/ieee1872-owl/pos#oRGenerated"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1119,7 +1119,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:hasValue rdf:resource="http://purl.org/ieee1872-owl/pos#pCompose"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1196,7 +1196,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_QuaternaryPredicate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:hasValue rdf:resource="http://purl.org/ieee1872-owl/pos#pGenerated"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1293,7 +1293,7 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:hasValue rdf:resource="http://purl.org/ieee1872-owl/pos#relOrientation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1426,7 +1426,7 @@ In order to retrieve the types of the arguments and output of the function, you 
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_classifiedBy"/>
+                <owl:onProperty rdf:resource="http://purl.org/ieee1872-owl/pos#_instance"/>
                 <owl:hasValue rdf:resource="http://purl.org/ieee1872-owl/pos#relPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1511,8 +1511,15 @@ In order to retrieve the types of the arguments and output of the function, you 
     <!-- http://purl.org/ieee1872-owl/pos#extensionPos -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ieee1872-owl/pos#extensionPos">
+        <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
         <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TernaryPredicate"/>
     </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#extensionPos"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
+        <annotation:ieee18722015AxiomNumber>9.5.17</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#extensionPos"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
@@ -1553,8 +1560,15 @@ In order to retrieve the types of the arguments and output of the function, you 
     <!-- http://purl.org/ieee1872-owl/pos#oCompose -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ieee1872-owl/pos#oCompose">
+        <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
         <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TernaryPredicate"/>
     </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#oCompose"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
+        <annotation:ieee18722015AxiomNumber>9.9.8</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#oCompose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
@@ -1567,8 +1581,15 @@ In order to retrieve the types of the arguments and output of the function, you 
     <!-- http://purl.org/ieee1872-owl/pos#oRGenerated -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ieee1872-owl/pos#oRGenerated">
+        <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
         <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TernaryPredicate"/>
     </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#oRGenerated"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
+        <annotation:ieee18722015AxiomNumber>9.10.7</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#oRGenerated"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
@@ -1581,8 +1602,15 @@ In order to retrieve the types of the arguments and output of the function, you 
     <!-- http://purl.org/ieee1872-owl/pos#pCompose -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ieee1872-owl/pos#pCompose">
+        <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
         <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TernaryPredicate"/>
     </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#pCompose"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
+        <annotation:ieee18722015AxiomNumber>9.4.8</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#pCompose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
@@ -1596,12 +1624,19 @@ In order to retrieve the types of the arguments and output of the function, you 
 
     <owl:NamedIndividual rdf:about="http://purl.org/ieee1872-owl/pos#pGenerated">
         <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#QuaternaryPredicate"/>
+        <rdf:type rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#pGenerated"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#QuaternaryPredicate"/>
         <annotation:ieee18722015AxiomNumber>9.5.8</annotation:ieee18722015AxiomNumber>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/pos#pGenerated"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
+        <annotation:ieee18722015AxiomNumber>9.5.7</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
