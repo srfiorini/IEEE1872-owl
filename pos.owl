@@ -1712,7 +1712,9 @@ _domain2(john_livesin_paris_today, paris)
 _domain3(john_livesin_paris_today, today)</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_VariableAssignment">
-        <rdfs:comment>This is a helper class to represent instantiation of reified relations in SUMO (such as ternary predicates and functions). Check the documentation of the subclasses for more info.</rdfs:comment>
+        <rdfs:comment>This is a helper class to represent instantiation of reified relations in SUMO (such as ternary predicates and functions). Check the documentation of the subclasses for more info. 
+
+Classes and properties preceeded by underscore (_) are related to this pattern.</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 
