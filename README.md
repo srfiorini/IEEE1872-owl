@@ -68,10 +68,10 @@ The first version was developed at Φ-Robotics Research Group (http://www.inf.uf
 
 # Bibliography
 
-* IEEE Standard Ontologies for Robotics and Automation," in IEEE Std 1872-2015 , 2015
-* Edson Prestes et al., In Robotics and Autonomous Systems, Volume 61, Issue 11, 2013, Pages 1193-1204, ISSN 0921-8890, https://doi.org/10.1016/j.robot.2013.04.005.
-* J. L. Carbonera et al., "Defining positioning in a core ontology for robotics," 2013 IEEE/RSJ International Conference on Intelligent Robots and Systems, Tokyo, 2013, pp. 1867-1872.
-doi: 10.1109/IROS.2013.6696603
-* Sandro Rama Fiorini, et al., Extensions to the core ontology for robotics and automation, In Robotics and Computer-Integrated Manufacturing, Volume 33, 2015, Pages 3-11, ISSN 0736-5845, https://doi.org/10.1016/j.rcim.2014.08.004.
-* Vitor A.M. Jorge, Vitor F. Rey, et al., Exploring the IEEE ontology for robotics and automation for heterogeneous agent interaction, In Robotics and Computer-Integrated Manufacturing, Volume 33, 2015, Pages 12-20, ISSN 0736-5845, https://doi.org/10.1016/j.rcim.2014.08.005.
+* IEEE Standard Ontologies for Robotics and Automation," in IEEE Std 1872-2015 , 2015.
+* Schlenoff, Craig, Edson Prestes, Raj Madhavan, Paulo Goncalves, Howard Li, Stephen Balakirsky, Thomas Kramer, and Emilio Miguelanez. "An IEEE standard ontology for robotics and automation." In Intelligent Robots and Systems (IROS), 2012 IEEE/RSJ International Conference on, pp. 1337-1342. IEEE, 2012, https://doi.org/10.1109/IROS.2012.6385518.
+* Edson Prestes, Joel Luis Carbonera, Sandro Rama Fiorini, Vitor A. M. Jorge, Mara Abel, Raj Madhavan, Angela Locoro, Paulo Goncalves, Marcos E. Barreto, Maki Habib, Abdelghani Chibani, Sébastien Gérard, Yacine Amirat, Craig Schlenoff, "Towards a core ontology for robotics and automation", In Robotics and Autonomous Systems, Volume 61, Issue 11, 2013, Pages 1193-1204, ISSN 0921-8890, https://doi.org/10.1016/j.robot.2013.04.005.
+* Carbonera, J.L., Fiorini, S.R., Prestes, E., Jorge, V.A., Abel, M., Madhavan, R., Locoro, A., Goncalves, P., Haidegger, T., Barreto, M.E. and Schlenoff, C., 2013, November. Defining positioning in a core ontology for robotics. In Intelligent Robots and Systems (IROS), 2013 IEEE/RSJ International Conference on (pp. 1867-1872). https://doi.org/10.1109/IROS.2013.6696603
+Sandro Rama Fiorini, Joel Luis Carbonera, Paulo Gonçalves, Vitor A.M. Jorge, Vítor Fortes Rey, Tamás Haidegger, Mara Abel, Signe A. Redfield, Stephen Balakirsky, Veera Ragavan, Howard Li, Craig Schlenoff, Edson Prestes, "Extensions to the core ontology for robotics and automation", In Robotics and Computer-Integrated Manufacturing, Volume 33, 2015, Pages 3-11, ISSN 0736-5845, https://doi.org/10.1016/j.rcim.2014.08.004.
+* Vitor A.M. Jorge, Vitor F. Rey, Renan Maffei, Sandro Rama Fiorini, Joel Luis Carbonera, Flora Branchi, João P. Meireles, Guilherme S. Franco, Flávia Farina, Tatiana S. da Silva, Mariana Kolberg, Mara Abel, Edson Prestes, "Exploring the IEEE ontology for robotics and automation for heterogeneous agent interaction", In Robotics and Computer-Integrated Manufacturing, Volume 33, 2015, Pages 12-20, ISSN 0736-5845, https://doi.org/10.1016/j.rcim.2014.08.005.
 
