@@ -172,12 +172,12 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     <!-- http://purl.org/ieee1872-owl/cora-bare#RoboticEnvironment -->
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/cora-bare#RoboticEnvironment">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/corax#PhyisicalEnvironment"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/corax#PhysicalEnvironment"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/ieee1872-owl/cora-bare#RoboticEnvironment"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.org/ieee1872-owl/corax#PhyisicalEnvironment"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/ieee1872-owl/corax#PhysicalEnvironment"/>
         <annotation:ieee18722015AxiomNumber>7.7.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
